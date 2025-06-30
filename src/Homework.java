@@ -26,8 +26,8 @@ public class Homework {
          */
         String hello = "Hello";
         String otherString = "Bye";
-        String isEqualLen = hello.length() == otherString.length() ? "равны" : "не равны";
-        System.out.printf("Длины строк со значениями \"%s\" и \"%s\" %s\n", hello, otherString, isEqualLen);
+        String resEqualLen = hello.length() == otherString.length() ? "равны" : "не равны";
+        System.out.printf("Длины строк со значениями \"%s\" и \"%s\" %s\n", hello, otherString, resEqualLen);
 
         /**
          * 4. Напишите функциональность, которая определяет, является ли год високосным
@@ -35,8 +35,8 @@ public class Homework {
          * Однако, есть исключение: если год делится на 100, то он не високосный, если только он не делится на 400.
          */
         int year = 2025;
-        String isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) ? "високосным" : "обычным";
-        System.out.printf("%d является %s годом\n", year, isLeapYear);
+        String resLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) ? "високосным" : "обычным";
+        System.out.printf("%d является %s годом\n", year, resLeapYear);
 
         /**
          * 5. Напишите калькулятор ИМТ
@@ -52,10 +52,8 @@ public class Homework {
          * 6. Выведите в консоль таблицу истинности для операторов && и ||
          *
          */
-        boolean a;
-        boolean b;
-        a = true;
-        b = true;
+        boolean a = true;
+        boolean b = true;
         System.out.println("a    \tb    \ta&&b  \ta||b  ");
         System.out.println("_____\t_____\t_____\t_____");
         System.out.printf("%b\t%b\t%b\t%b%n", a, b, a && b, a || b);
@@ -132,54 +130,54 @@ public class Homework {
          * 1. Дано число. Напишите программу, которая определяет, является ли оно четным или нечетным
          */
         int num1 = 5;
-        String isOdd;
+        String resEvenOdd;
         if (num1 % 2 == 0) {
-            isOdd = "четное";
+            resEvenOdd = "четное";
         } else {
-            isOdd = "нечетное";
+            resEvenOdd = "нечетное";
         }
-        System.out.printf("Число %d: %s\n", num1, isOdd);
+        System.out.printf("Число %d: %s\n", num1, resEvenOdd);
 
         /**
          * 2. Даны два числа. Выведите «Первое больше», «Второе больше» или «Равны»
          */
         int numA = 2;
         int numB = 3;
-        String isRelation;
+        String resRelation;
         if (numA == numB) {
-            isRelation = "Равны";
+            resRelation = "Равны";
         } else if (numA > numB) {
-            isRelation = "Первое больше";
+            resRelation = "Первое больше";
         } else {
-            isRelation = "Второе больше";
+            resRelation = "Второе больше";
         }
-        System.out.println(isRelation);
+        System.out.println(resRelation);
 
         /**
          * 3. Дано число. Выведите «Положительное», «Отрицательное» или «Равно нулю»
          */
         int numC = -3;
-        String isPositive;
+        String SignDescript;
         if (numC == 0) {
-            isPositive = "Равно нулю";
+            SignDescript = "Равно нулю";
         } else if (numC > 0) {
-            isPositive = "Положительное";
+            SignDescript = "Положительное";
         } else {
-            isPositive = "Отрицательное";
+            SignDescript = "Отрицательное";
         }
-        System.out.println(isPositive);
+        System.out.println(SignDescript);
 
         /**
          * 4. Дано число (возраст). Если возраст >= 18, выведите "Доступ разрешен", иначе — "Доступ запрещен"
          */
         int age = 19;
-        String isAccess;
+        String accessState;
         if (age >= 18) {
-            isAccess = "Доступ разрешен";
+            accessState = "Доступ разрешен";
         } else {
-            isAccess = "Доступ запрещен";
+            accessState = "Доступ запрещен";
         }
-        System.out.println(isAccess);
+        System.out.println(accessState);
 
         /**
          * 5. Придумать задачу самим
@@ -215,21 +213,21 @@ public class Homework {
          * 1. Дано число. Используя тернарный оператор, определите, положительное, отрицательное или нулевое
          */
         int numG = 3;
-        String resSign = (numG == 0) ? "нулевое" : (numG > 0) ? "положительное" : "отрицательное";
-        System.out.printf("Число %d: %s\n", numG, resSign);
+        String signDescription = (numG == 0) ? "нулевое" : (numG > 0) ? "положительное" : "отрицательное";
+        System.out.printf("Число %d: %s\n", numG, signDescription);
         /**
          * 2. Дано число. С помощью тернарного оператора проверьте, делится ли оно на 3 и 5 одновременно. Выведите «Кратно» или «Не кратно»
          */
         int numH = 15;
-        String idDiv3And5 = (numH % 3 == 0 && numH % 5 == 0) ? "Кратно" : "Не кратно";
-        System.out.println(idDiv3And5);
+        String divisibilityStatus = (numH % 3 == 0 && numH % 5 == 0) ? "Кратно" : "Не кратно";
+        System.out.println(divisibilityStatus);
 
         /**
          * 3. Для заданного числа верните строку «Четное» или «Нечетное», используя тернарный оператор.
          */
         int numH2 = 13;
-        String dividedByTwo = (numH2 % 2 == 0) ? "Четное" : "Нечетное";
-        System.out.println(dividedByTwo);
+        String oddState = (numH2 % 2 == 0) ? "Четное" : "Нечетное";
+        System.out.println(oddState);
 
         /*
         switch
@@ -240,58 +238,54 @@ public class Homework {
          * 1. Дано число от 1 до 7. Выведите название дня недели. Если число вне диапазона, выведите «Ошибка»
          */
         int numH3 = 5;
-        String dayOfWeek;
         switch (numH3) {
             case 1:
-                dayOfWeek = "Понедельник";
+                System.out.println("Понедельник");
                 break;
             case 2:
-                dayOfWeek = "Вторник";
+                System.out.println("Вторник");
                 break;
             case 3:
-                dayOfWeek = "Среда";
+                System.out.println("Среда");
                 break;
             case 4:
-                dayOfWeek = "Четверг";
+                System.out.println("Четверг");
                 break;
             case 5:
-                dayOfWeek = "Пятница";
+                System.out.println("Пятница");
                 break;
             case 6:
-                dayOfWeek = "Суббота";
+                System.out.println("Суббота");
                 break;
             case 7:
-                dayOfWeek = "Воскресенье";
+                System.out.println("Воскресенье");
                 break;
             default:
-                dayOfWeek = "Ошибка";
+                System.out.println("Ошибка");
         }
-        System.out.println(dayOfWeek);
         /**
          * 2. Дано число от 1 до 5. Выведите описание оценки (оцените свою работу)
          */
         int grade = 4;
-        String gradeDesc;
         switch (grade) {
             case 1:
-                gradeDesc = "Кол";
+                System.out.println("Кол");
                 break;
             case 2:
-                gradeDesc = "Неуд";
+                System.out.println("Неуд");
                 break;
             case 3:
-                gradeDesc = "Зачет";
+                System.out.println("Зачет");
                 break;
             case 4:
-                gradeDesc = "Хорошо";
+                System.out.println("Хорошо");
                 break;
             case 5:
-                gradeDesc = "Отлично";
+                System.out.println("Отлично");
                 break;
             default:
-                gradeDesc = "Ошибка";
+                System.out.println("Ошибка");
         }
-        System.out.println(gradeDesc);
         /*
         for
         1. Дан список чисел. Посчитайте сумму всех четных элементов
@@ -305,9 +299,9 @@ public class Homework {
          */
         int[] listNum = {3, 6, 7, 8, 4, 7, 9};
         int sumOdd = 0;
-        for (int i : listNum) {
-            if (i % 2 == 0) {
-                sumOdd = sumOdd + i;
+        for (int i = 0; i < listNum.length; i++) {
+            if (listNum[i] % 2 == 0) {
+                sumOdd += listNum[i];
             }
         }
         System.out.println(sumOdd);
@@ -316,9 +310,9 @@ public class Homework {
          */
         int[] listNum2 = {3, 6, 7, 8, 88, 7, -99999};
         int maxNum = listNum2[0];
-        for (int i : listNum2) {
-            if (i > maxNum) {
-                maxNum = i;
+        for (int i = 1; i < listNum2.length; i++) {
+            if (listNum2[i] > maxNum) {
+                maxNum = listNum2[i];
             }
         }
         System.out.println(maxNum);
@@ -334,8 +328,9 @@ public class Homework {
          * 4. С помощью цикла for выведите числа от 10 до 1 в обратном порядке
          */
         for (int i = 10; i >= 1; i--) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
+        System.out.println();
         /**
          * 5. Найдите количество четных чисел в диапазоне от 1 до 50
          */
@@ -356,7 +351,7 @@ public class Homework {
         /**
          * 1. Найдите наименьшее число больше 100, которое делится на 7
          */
-        int minDiv7 = 100;
+        int minDiv7 = 101;
         while (minDiv7 % 7 != 0) {
             minDiv7++;
         }
@@ -426,11 +421,11 @@ public class Homework {
          */
         int[] list2 = {1, 3, 5, 56, 7, 7, -6, 8};
         int sumList2 = 0;
-        for (int i : list2) {
-            if (i < 0) {
+        for (int i = 0; i < list2.length; i++) {
+            if (list2[i] < 0) {
                 break;
             }
-            sumList2 += i;
+            sumList2 += list2[i];
         }
         System.out.println(sumList2);
         /**
@@ -438,14 +433,12 @@ public class Homework {
          */
         int[] list3 = {1, 3, 5, 56, 70, 7, -6, 8,};
         int sumList3 = 0;
-        for (int i : list3) {
-            sumList3 += i;
-            if (sumList3 > 100) {
+        for (int i = 0; i < list3.length; i++) {
+            if (sumList3 + list3[i] > 100) {
                 break;
             }
+            sumList3 += list3[i];
         }
         System.out.println(sumList3);
-
     }
 }
-
