@@ -157,19 +157,20 @@ public class Homework {
          * 3. Дано число. Выведите «Положительное», «Отрицательное» или «Равно нулю»
          */
         int numC = -3;
-        String SignDescript;
+        String signDescript;
         if (numC == 0) {
-            SignDescript = "Равно нулю";
+            signDescript = "Равно нулю";
         } else if (numC > 0) {
-            SignDescript = "Положительное";
+            signDescript = "Положительное";
         } else {
-            SignDescript = "Отрицательное";
+            signDescript = "Отрицательное";
         }
-        System.out.println(SignDescript);
+        System.out.println(signDescript);
 
         /**
          * 4. Дано число (возраст). Если возраст >= 18, выведите "Доступ разрешен", иначе — "Доступ запрещен"
          */
+
         int age = 19;
         String accessState;
         if (age >= 18) {
