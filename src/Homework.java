@@ -171,13 +171,13 @@ public class Homework {
          * 4. Дано число (возраст). Если возраст >= 18, выведите "Доступ разрешен", иначе — "Доступ запрещен"
          */
         int age = 19;
-        String AccessState;
+        String accessState;
         if (age >= 18) {
-            AccessState = "Доступ разрешен";
+            accessState = "Доступ разрешен";
         } else {
-            AccessState = "Доступ запрещен";
+            accessState = "Доступ запрещен";
         }
-        System.out.println(AccessState);
+        System.out.println(accessState);
 
         /**
          * 5. Придумать задачу самим
